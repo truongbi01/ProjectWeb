@@ -1,0 +1,71 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+body {
+    margin: 0;
+    font-family: 'Sanchez', serif;
+}
+
+.header {
+    background: rgb(59,59,59);
+    background: linear-gradient(145deg, rgba(59,59,59,1) 18%, rgba(5,2,6,1) 59%);
+    width: 100%;
+    position:sticky;
+    top:0px;
+    z-index:11;
+}
+.container
+{
+    margin: 0px auto;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    justify-items:center;
+}
+#logo img
+{   z-index:100;
+    max-width:50px;
+    height:auto;
+  
+}
+#logo{
+    padding:5px 10px;
+}
+#main-menu
+{   
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#main-menu li a {
+        color: #f8f8f8;
+        display: block;
+        padding: 18px 20px 2px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        position:relative;
+}
+    #main-menu li a:hover {
+        color: #f8f8f8;
+        text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4, 0 0 500px #03e9f4;
+       
+    }
+    #main-menu li a::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        color: #f8f8f8;
+        box-shadow: 0 2px 0 0 #03e9f4;
+        transform: scaleX(0);
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+#main-menu li a:hover::after
+{
+    transform:scaleX(1);
+}
+
+    
+
